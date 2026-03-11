@@ -69,7 +69,10 @@
     "placeholder": "Write anything — or just a few words.",
     "send": "Send",
     "error": "Something went wrong. Please try again.",
-    "preparing": "Preparing your session..."
+    "preparing": "Preparing your session...",
+    "sttUnavailable": "Voice input isn't set up. Type your response instead.",
+    "sttError": "Couldn't catch that. Try again or type your response.",
+    "micError": "Microphone access denied. Type your response instead."
   },
   "review": {
     "mode": "Practice",

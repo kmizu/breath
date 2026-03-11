@@ -13,6 +13,10 @@ const noHints: PersonalizationHints = {
   recentPatterns: [],
   preferredMode: null,
   avoidMode: null,
+  avgTension: 2,
+  sessionCount: 0,
+  lastRiskLevel: null,
+  notes: [],
 };
 
 // ── Layer 3: Crisis ───────────────────────────────────────────────────────────
