@@ -117,7 +117,7 @@ export function GuidancePlayer({ guidance, decision, checkin, onEnd, onWorse }: 
             <button
               onClick={handleWorse}
               disabled={escalating}
-              className="flex-1 py-2 text-sm text-white bg-stone-700 rounded hover:bg-stone-800 disabled:opacity-50 transition-colors"
+              className="flex-1 py-2 text-sm text-white bg-[#6b8271] rounded hover:bg-[#5a7060] disabled:opacity-50 transition-colors"
             >
               {escalating ? t('adjusting') : t('adjustOrStop')}
             </button>

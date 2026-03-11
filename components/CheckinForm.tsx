@@ -49,7 +49,7 @@ export function CheckinForm({ onSubmit, loading }: CheckinFormProps) {
               type="button"
               onClick={() => setMood(v)}
               className={`flex-1 py-2 text-sm rounded transition-colors ${
-                mood === v ? 'bg-stone-700 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                mood === v ? 'bg-[#6b8271] text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
               }`}
             >
               {v}
@@ -71,7 +71,7 @@ export function CheckinForm({ onSubmit, loading }: CheckinFormProps) {
               type="button"
               onClick={() => setTension(v)}
               className={`flex-1 py-2 text-sm rounded transition-colors ${
-                tension === v ? 'bg-stone-700 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                tension === v ? 'bg-[#6b8271] text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
               }`}
             >
               {v}
@@ -93,7 +93,7 @@ export function CheckinForm({ onSubmit, loading }: CheckinFormProps) {
               type="button"
               onClick={() => setSelfCritical(v)}
               className={`flex-1 py-2 text-sm rounded transition-colors ${
-                selfCritical === v ? 'bg-stone-700 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                selfCritical === v ? 'bg-[#6b8271] text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
               }`}
             >
               {v ? t('yes') : t('no')}
@@ -112,7 +112,7 @@ export function CheckinForm({ onSubmit, loading }: CheckinFormProps) {
               type="button"
               onClick={() => setIntent(i)}
               className={`flex-1 py-2 text-sm rounded transition-colors ${
-                intent === i ? 'bg-stone-700 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                intent === i ? 'bg-[#6b8271] text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
               }`}
             >
               {i === 'calming' ? t('intentCalming') : i === 'grounding' ? t('intentGrounding') : t('intentCheckin')}
@@ -138,7 +138,7 @@ export function CheckinForm({ onSubmit, loading }: CheckinFormProps) {
               type="button"
               onClick={() => setLastSessionOutcome(value as LastSessionOutcome | '')}
               className={`flex-1 py-2 text-xs rounded transition-colors ${
-                lastSessionOutcome === value ? 'bg-stone-700 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                lastSessionOutcome === value ? 'bg-[#6b8271] text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
               }`}
             >
               {t(labelKey)}
@@ -167,7 +167,7 @@ export function CheckinForm({ onSubmit, loading }: CheckinFormProps) {
       <button
         type="submit"
         disabled={loading}
-        className="w-full py-3 text-sm text-white bg-stone-700 rounded hover:bg-stone-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+        className="w-full py-3 text-sm text-white bg-[#6b8271] rounded hover:bg-[#5a7060] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
       >
         {loading ? t('checking') : t('continue')}
       </button>

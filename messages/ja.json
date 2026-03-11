@@ -1,74 +1,80 @@
 {
   "nav": {
-    "brand": "マインドフルネス監督",
+    "brand": "ひといき",
     "session": "セッション",
     "history": "履歴",
     "switchLocale": "English"
   },
   "home": {
-    "title": "マインドフルネス監督",
-    "subtitle": "瞑想の先生ではありません。練習があなたにとって機能しているかを確認し、機能していないときに止めるか切り替えることを提案するモニターです。",
-    "watchesFor": "監視していること",
+    "title": "ひといき",
+    "subtitle": "あなたのマインドフルネスをそっとそばで見守るパートナー。練習が助けになっているか、それとも重荷になっていないかを一緒に確認します。",
+    "watchesFor": "こんなことを見ています",
     "watchItems": [
-      "頑張りすぎること",
-      "受け入れを義務にすること",
-      "休まず自分を監視すること",
-      "セッションをパフォーマンスとして扱うこと",
-      "悪化しているのに続けること"
+      "頑張りすぎていないか",
+      "受け入れを義務にしていないか",
+      "休まず自分を観察していないか",
+      "練習をパフォーマンスにしていないか",
+      "しんどいのに続けていないか"
     ],
     "doesNotDo": "しないこと",
     "doesNotItems": [
-      "連続記録なし。スコアなし。実績なし。",
-      "どう感じるかの約束なし。",
-      "スピリチュアルな言葉なし。",
-      "より長く瞑想するよう促すことなし。"
+      "連続記録なし。スコアなし。ランキングなし。",
+      "どう感じるかの約束はしません。",
+      "スピリチュアルな言葉は使いません。",
+      "長く瞑想させようとしません。"
     ],
-    "startSession": "セッションを始める",
-    "llmActive": "AI監督: 有効 (OpenAI gpt-5.4)",
-    "llmInactive": "AI監督: ルールベースのみ — .env.local に OPENAI_API_KEY を追加",
-    "ttsActive": "音声: 利用可能 (ElevenLabs)",
+    "startSession": "はじめる",
+    "llmActive": "AIガイダンス: 有効",
+    "llmInactive": "AIガイダンス: オフライン — .env.local に OPENAI_API_KEY を追加",
+    "ttsActive": "音声: 利用可能",
     "ttsInactive": "音声: テキストのみ — .env.local に ELEVENLABS_API_KEY を追加"
   },
   "session": {
     "steps": {
-      "checkin": "チェックイン",
-      "review": "レビュー",
+      "checkin": "気持ちを聞かせて",
+      "review": "気づいたこと",
       "practice": "練習",
       "reflect": "振り返り"
     },
-    "done": "セッションを記録しました。",
+    "done": "セッションを保存しました。お疲れ様でした。",
     "anotherSession": "もう一度",
     "viewHistory": "履歴を見る"
   },
   "checkin": {
-    "moodLabel": "今の気分はどうですか？",
+    "moodLabel": "今、どんな気分ですか？",
     "moodLow": "とても低い",
     "moodHigh": "良い",
-    "tensionLabel": "体や心にどれくらいの緊張やプレッシャーを感じますか？",
+    "tensionLabel": "体や心の緊張はどのくらいありますか？",
     "tensionLow": "なし",
     "tensionHigh": "とても高い",
     "selfCriticalLabel": "今日、自分に厳しくしていますか？",
     "yes": "はい",
     "no": "いいえ",
-    "intentLabel": "今、何が一番役立ちそうですか？",
-    "intentCalming": "落ち着き",
+    "intentLabel": "今日、何が一番役立ちそうですか？",
+    "intentCalming": "落ち着くこと",
     "intentGrounding": "グラウンディング",
-    "intentCheckin": "確認だけ",
+    "intentCheckin": "確認するだけ",
     "lastSessionLabel": "前回のセッションはどうでしたか？",
     "optional": "（任意）",
     "skip": "スキップ",
     "relieving": "楽になった",
     "neutral": "普通",
     "pressuring": "プレッシャーになった",
-    "freeTextLabel": "今、他に気になることはありますか？",
+    "freeTextLabel": "他に気になることはありますか？",
     "error": "エラーが発生しました。もう一度お試しください。",
     "checking": "確認中...",
     "continue": "続ける"
   },
+  "reflection": {
+    "placeholder": "何でも書いてください — 短くても大丈夫です。",
+    "send": "送信",
+    "error": "エラーが発生しました。もう一度お試しください。",
+    "preparing": "セッションを準備しています..."
+  },
   "review": {
     "mode": "モード",
     "duration": "時間",
-    "noticed": "検出されたパターン",
+    "noticed": "気づいたこと",
     "begin": "始める",
     "starting": "準備中...",
     "notToday": "今日はやめておく",
@@ -93,9 +99,9 @@
     "dur180": "約3分",
     "playAudio": "音声を再生",
     "loadingAudio": "読み込み中...",
-    "audioUnavailable": "音声再生が設定されていません。上のテキストをお読みください。",
+    "audioUnavailable": "音声が設定されていません。上のテキストをお読みください。",
     "audioError": "音声を読み込めませんでした。上のテキストをお読みください。",
-    "worseBtn": "これは悪化させている",
+    "worseBtn": "しんどくなってきた",
     "worseTitle": "何が起きていますか？",
     "worsePlaceholder": "何でも書いてください。空白のままでも構いません。",
     "adjustOrStop": "調整または停止",
@@ -104,13 +110,13 @@
     "done": "終わった"
   },
   "post": {
-    "pressureQuestion": "練習はプレッシャーを減らしましたか、それとも増やしましたか？",
-    "reducedIt": "減った",
-    "addedToIt": "増えた",
-    "continueQuestion": "今日もう一度練習しますか？",
+    "pressureQuestion": "練習は楽になりましたか、それとも重くなりましたか？",
+    "reducedIt": "楽になった",
+    "addedToIt": "重くなった",
+    "continueQuestion": "今日またやってみたいですか？",
     "yes": "はい",
     "no": "いいえ",
-    "notesLabel": "次回のために覚えておきたいことはありますか？",
+    "notesLabel": "次回のために覚えておきたいことは？",
     "optional": "（任意）",
     "requiredError": "両方の質問に答えてください。",
     "submitError": "エラーが発生しました。もう一度お試しください。",
@@ -118,29 +124,23 @@
     "done": "完了"
   },
   "history": {
-    "title": "セッション履歴",
-    "sessionsCount": "{count}回のセッション",
+    "title": "セッションの記録",
+    "sessionsCount": "{count}回",
     "noSessions": "セッションはまだありません。",
     "whatWeNoticed": "気づいたこと",
     "feltBetter": "楽になった",
-    "addedPressure": "プレッシャーになった",
-    "wouldPracticeAgain": "また練習したい",
+    "addedPressure": "重くなった",
+    "wouldPracticeAgain": "またやりたい",
     "enoughForToday": "今日はここまで"
   },
-  "reflection": {
-    "placeholder": "何でも書いてください — 短くても大丈夫です。",
-    "send": "送信",
-    "error": "エラーが発生しました。もう一度お試しください。",
-    "preparing": "セッションを準備しています..."
-  },
   "crisis": {
-    "heading": "誰かと話す必要がある場合：",
+    "heading": "誰かと話したい場合：",
     "resources": [
       "いのちの電話: 0570-783-556",
       "よりそいホットライン: 0120-279-338",
       "こころの健康相談統一ダイヤル: 0570-064-556",
       "Befrienders Worldwide: befrienders.org"
     ],
-    "notDesigned": "このアプリは危機的状況向けに設計されていません。上記の方々がいます。"
+    "notDesigned": "このアプリは危機的な状況のためには設計されていません。上記の方々がいます。"
   }
 }

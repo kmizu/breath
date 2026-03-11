@@ -59,7 +59,7 @@ export function SupervisorReview({ decision, checkin, onStart, onDecline, loadin
           <button
             onClick={onStart}
             disabled={loading}
-            className="flex-1 py-3 text-sm text-white bg-stone-700 rounded hover:bg-stone-800 disabled:opacity-50 transition-colors"
+            className="flex-1 py-3 text-sm text-white bg-[#6b8271] rounded hover:bg-[#5a7060] disabled:opacity-50 transition-colors"
           >
             {loading ? t('starting') : t('begin')}
           </button>

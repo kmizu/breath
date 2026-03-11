@@ -36,7 +36,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${geist.variable} font-sans antialiased bg-white text-stone-800`}>
+      <body className={`${geist.variable} font-sans antialiased`} style={{ backgroundColor: '#faf7f2', color: '#3d3530' }}>
         <NextIntlClientProvider messages={messages}>
           <Nav />
           <main className="max-w-2xl mx-auto px-6 py-12">

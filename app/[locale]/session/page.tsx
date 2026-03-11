@@ -132,7 +132,7 @@ export default function SessionPage() {
           <div className="flex gap-4 justify-center">
             <button
               onClick={reset}
-              className="px-5 py-2.5 text-sm text-white bg-stone-700 rounded hover:bg-stone-800 transition-colors"
+              className="px-5 py-2.5 text-sm text-white bg-[#6b8271] rounded hover:bg-[#5a7060] transition-colors"
             >
               {t('anotherSession')}
             </button>

@@ -49,7 +49,7 @@ export function PostReflection({ sessionId, onSubmit, loading }: PostReflectionP
               type="button"
               onClick={() => setFeltBetter(value)}
               className={`flex-1 py-2 text-sm rounded transition-colors ${
-                feltBetter === value ? 'bg-stone-700 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                feltBetter === value ? 'bg-[#6b8271] text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
               }`}
             >
               {t(labelKey)}
@@ -70,7 +70,7 @@ export function PostReflection({ sessionId, onSubmit, loading }: PostReflectionP
               type="button"
               onClick={() => setWouldContinue(value)}
               className={`flex-1 py-2 text-sm rounded transition-colors ${
-                wouldContinue === value ? 'bg-stone-700 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                wouldContinue === value ? 'bg-[#6b8271] text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
               }`}
             >
               {t(labelKey)}
@@ -98,7 +98,7 @@ export function PostReflection({ sessionId, onSubmit, loading }: PostReflectionP
       <button
         type="submit"
         disabled={loading}
-        className="w-full py-3 text-sm text-white bg-stone-700 rounded hover:bg-stone-800 disabled:opacity-50 transition-colors"
+        className="w-full py-3 text-sm text-white bg-[#6b8271] rounded hover:bg-[#5a7060] disabled:opacity-50 transition-colors"
       >
         {loading ? t('saving') : t('done')}
       </button>

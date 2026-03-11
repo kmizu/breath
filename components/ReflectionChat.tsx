@@ -117,7 +117,7 @@ export function ReflectionChat({ locale, onDone, loading: externalLoading }: Ref
               className={`max-w-[88%] px-4 py-3 rounded-2xl text-sm leading-relaxed ${
                 msg.role === 'agent'
                   ? 'bg-stone-50 text-stone-700 rounded-tl-sm border border-stone-100'
-                  : 'bg-stone-700 text-white rounded-tr-sm'
+                  : 'bg-[#6b8271] text-white rounded-tr-sm'
               }`}
             >
               {msg.content}
@@ -176,7 +176,7 @@ export function ReflectionChat({ locale, onDone, loading: externalLoading }: Ref
         <button
           onClick={sendMessage}
           disabled={!input.trim() || busy}
-          className="px-4 py-3 text-sm text-white bg-stone-700 rounded-xl hover:bg-stone-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+          className="px-4 py-3 text-sm text-white bg-[#6b8271] rounded-xl hover:bg-[#5a7060] disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
         >
           {t('send')}
         </button>

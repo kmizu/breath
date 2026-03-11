@@ -35,7 +35,7 @@ export default async function Home() {
       <div>
         <Link
           href="/session"
-          className="inline-block px-6 py-3 text-sm text-white bg-stone-700 rounded hover:bg-stone-800 transition-colors"
+          className="inline-block px-6 py-3 text-sm text-white bg-[#6b8271] rounded hover:bg-[#5a7060] transition-colors"
         >
           {t('startSession')}
         </Link>

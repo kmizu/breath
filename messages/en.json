@@ -1,42 +1,42 @@
 {
   "nav": {
-    "brand": "Mindfulness Supervisor",
+    "brand": "breathe",
     "session": "Session",
     "history": "History",
     "switchLocale": "日本語"
   },
   "home": {
-    "title": "Mindfulness Supervisor",
-    "subtitle": "Not a mindfulness teacher. A monitor that checks whether your practice is working for you — and suggests stopping or switching when it isn't.",
-    "watchesFor": "What it watches for",
+    "title": "breathe",
+    "subtitle": "A gentle companion that learns how mindfulness works for you — and notices when practice is adding pressure rather than easing it.",
+    "watchesFor": "What it looks out for",
     "watchItems": [
       "Trying too hard",
       "Turning acceptance into an obligation",
-      "Monitoring yourself instead of resting",
-      "Treating the session as a performance",
-      "Continuing when it is making things worse"
+      "Watching yourself instead of resting",
+      "Treating practice as a performance",
+      "Continuing when it's making things harder"
     ],
-    "doesNotDo": "What it does not do",
+    "doesNotDo": "What it won't do",
     "doesNotItems": [
       "No streaks. No scores. No achievements.",
-      "No promises about how you will feel.",
+      "No promises about how you'll feel.",
       "No spiritual language.",
-      "No pushing you to meditate longer."
+      "No pressure to meditate longer."
     ],
-    "startSession": "Start a session",
-    "llmActive": "AI supervision: active (OpenAI gpt-5.4)",
-    "llmInactive": "AI supervision: rule-based only — add OPENAI_API_KEY to .env.local",
-    "ttsActive": "Voice: available (ElevenLabs)",
+    "startSession": "Start",
+    "llmActive": "AI guidance: active",
+    "llmInactive": "AI guidance: offline — add OPENAI_API_KEY to .env.local",
+    "ttsActive": "Voice: available",
     "ttsInactive": "Voice: text only — add ELEVENLABS_API_KEY to .env.local"
   },
   "session": {
     "steps": {
-      "checkin": "Check in",
-      "review": "Review",
+      "checkin": "How are you",
+      "review": "What I noticed",
       "practice": "Practice",
-      "reflect": "Reflect"
+      "reflect": "After"
     },
-    "done": "Session recorded.",
+    "done": "Session saved. Take care of yourself.",
     "anotherSession": "Another session",
     "viewHistory": "View history"
   },
@@ -44,7 +44,7 @@
     "moodLabel": "How are you feeling right now?",
     "moodLow": "Very low",
     "moodHigh": "Good",
-    "tensionLabel": "How much tension or pressure do you feel in your body or mind?",
+    "tensionLabel": "How much tension or pressure do you feel?",
     "tensionLow": "None",
     "tensionHigh": "Very high",
     "selfCriticalLabel": "Are you being hard on yourself today?",
@@ -60,10 +60,16 @@
     "relieving": "Relieving",
     "neutral": "Neutral",
     "pressuring": "Pressuring",
-    "freeTextLabel": "Anything else on your mind right now?",
+    "freeTextLabel": "Anything else on your mind?",
     "error": "Something went wrong. Please try again.",
     "checking": "Checking...",
     "continue": "Continue"
+  },
+  "reflection": {
+    "placeholder": "Write anything — or just a few words.",
+    "send": "Send",
+    "error": "Something went wrong. Please try again.",
+    "preparing": "Preparing your session..."
   },
   "review": {
     "mode": "Mode",
@@ -72,11 +78,11 @@
     "begin": "Begin",
     "starting": "Starting...",
     "notToday": "Not today",
-    "okayStop": "That's okay — I'll stop here",
+    "okayStop": "That's okay — stopping here",
     "modes": {
       "breath": "Breath awareness",
       "sound": "Sound anchor",
-      "body": "Body anchor",
+      "body": "Body awareness",
       "external": "External focus",
       "reset": "Quick reset",
       "abort": "Stop safely"
@@ -92,22 +98,22 @@
     "dur60": "~1 min",
     "dur180": "~3 min",
     "playAudio": "Play audio",
-    "loadingAudio": "Loading audio...",
-    "audioUnavailable": "Voice playback not configured. Read the text above.",
-    "audioError": "Could not load audio. Read the text above.",
-    "worseBtn": "This is making it worse",
+    "loadingAudio": "Loading...",
+    "audioUnavailable": "Voice not configured. Read the text above.",
+    "audioError": "Couldn't load audio. Read the text above.",
+    "worseBtn": "This is making it harder",
     "worseTitle": "What's happening?",
-    "worsePlaceholder": "You can say anything, or just leave this blank.",
+    "worsePlaceholder": "Anything you want to say — or leave it blank.",
     "adjustOrStop": "Adjust or stop",
     "adjusting": "Adjusting...",
     "cancel": "Cancel",
     "done": "I'm done"
   },
   "post": {
-    "pressureQuestion": "Did the practice reduce pressure or add to it?",
-    "reducedIt": "Reduced it",
+    "pressureQuestion": "Did the practice ease the pressure, or add to it?",
+    "reducedIt": "Eased it",
     "addedToIt": "Added to it",
-    "continueQuestion": "Would you practice again today?",
+    "continueQuestion": "Would you want to practice again today?",
     "yes": "Yes",
     "no": "No",
     "notesLabel": "Anything to remember for next time?",
@@ -118,20 +124,14 @@
     "done": "Done"
   },
   "history": {
-    "title": "Session history",
-    "sessionsCount": "{count} sessions recorded",
+    "title": "Your sessions",
+    "sessionsCount": "{count} sessions",
     "noSessions": "No sessions yet.",
     "whatWeNoticed": "What we've noticed",
     "feltBetter": "Felt better",
     "addedPressure": "Added pressure",
     "wouldPracticeAgain": "Would practice again",
     "enoughForToday": "Enough for today"
-  },
-  "reflection": {
-    "placeholder": "Write anything — or just a few words.",
-    "send": "Send",
-    "error": "Something went wrong. Please try again.",
-    "preparing": "Preparing your session..."
   },
   "crisis": {
     "heading": "If you need to talk to someone:",
@@ -141,6 +141,6 @@
       "Samaritans (UK): 116 123",
       "Befrienders Worldwide: befrienders.org"
     ],
-    "notDesigned": "This app is not designed for crisis situations. The people above are."
+    "notDesigned": "This app isn't designed for crisis situations. The people above are."
   }
 }
