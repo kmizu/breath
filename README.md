@@ -1,20 +1,20 @@
-# mindfulness-supervisor
+# breathe / ひといき
 
 [日本語](README-ja.md)
 
-A supervision-first mindfulness app. Not a teacher — a safety monitor that gradually learns how practice works for you.
+A personalized mindfulness companion that builds a long-term picture of how practice works for you — and notices when it might be making things harder.
 
 Inspired by the 3-agent architecture described in [MindfulAgents: A Multi-Agent Framework for Mindfulness Practice](https://arxiv.org/abs/2603.06926) — implemented as a single local app with a Reflection Agent, Personalization Agent, and Expert Alignment Agent.
 
 ## What it does
 
-Before each session, a counselor-style conversational agent asks how you are. Your responses are analyzed to detect when practice is likely to harm rather than help: self-judgment, internal surveillance, forced acceptance, compulsive continuation, performance framing. The supervisor adapts its guidance accordingly and builds a growing picture of what works for you over time.
+Before each session, a counselor-style conversational agent listens to how you are. Your responses are used to detect when practice is likely to add pressure rather than ease it — self-judgment, internal surveillance, forced acceptance, compulsive continuation, performance framing — and to personalize the session accordingly. Over time, it learns what helps you and what doesn't.
 
-1. **Conversation** — a 2–3 turn dialogue before the session (Reflection Agent)
-2. **Supervisor review** — evaluates risk, recommends mode and duration (Personalization Agent + long-term memory)
-3. **Session** — short guided practice (30s / 1min / 3min), personalized to your state (Expert Alignment Agent)
-   - "This is making it worse" button always visible
-4. **Post-session reflection** — did this help or add pressure?
+1. **Conversation** — a 3-turn dialogue before the session (Reflection Agent)
+2. **For today** — recommends mode and duration based on your state and history (Personalization Agent + long-term memory)
+3. **Practice** — short guided session (30s / 1min / 3min), personalized to your state (Expert Alignment Agent)
+   - "This is making it harder" button always visible
+4. **After** — did this ease the pressure, or add to it?
 5. **History** — past sessions; memory updates in the background after each one
 
 ## Setup
@@ -36,19 +36,17 @@ Open http://localhost:3000 (or /en, /ja for localized).
 | `ELEVENLABS_API_KEY` | No | Voice playback. Without this, guidance is text-only. |
 | `ELEVENLABS_VOICE_ID` | No | Voice ID. Defaults to a calm English voice. |
 
-The app works fully offline (no API keys). Supervision uses keyword detection, guidance uses preset scripts.
+The app works fully without API keys. Pattern detection uses keyword rules, guidance uses preset scripts.
 
 ## Architecture
 
 Three agents run in sequence each session:
 
-- **Reflection Agent** — conversational check-in (2–3 turns), extracts a `ReflectionProfile`
-- **Personalization Agent** — builds a `SessionPlan` using the profile + long-term `UserMemory` + rule-based pattern detection
+- **Reflection Agent** — 3-turn conversational check-in, extracts a `ReflectionProfile`
+- **Personalization Agent** — builds a `SessionPlan` using the profile + long-term `UserMemory` + rule-based pattern detection (6 dimensions from paper §3.3)
 - **Expert Alignment Agent** — generates personalized guidance text from the plan
 
 Long-term memory (counselor-style case notes) accumulates across sessions and shapes future recommendations.
-
-See `docs/architecture.md` and `docs/safety-model.md` for details.
 
 ## Data
 
