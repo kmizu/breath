@@ -7,38 +7,38 @@
   },
   "home": {
     "title": "breathe",
-    "subtitle": "A gentle companion that learns how mindfulness works for you — and notices when practice is adding pressure rather than easing it.",
-    "watchesFor": "What it looks out for",
+    "subtitle": "A quiet companion that remembers your practice over time — learning what helps, and noticing when mindfulness might be adding weight rather than easing it.",
+    "watchesFor": "I pay attention to",
     "watchItems": [
-      "Trying too hard",
+      "Pushing too hard",
       "Turning acceptance into an obligation",
-      "Watching yourself instead of resting",
-      "Treating practice as a performance",
+      "Observing yourself instead of resting",
+      "Treating practice as something to perform",
       "Continuing when it's making things harder"
     ],
-    "doesNotDo": "What it won't do",
+    "doesNotDo": "What I won't do",
     "doesNotItems": [
       "No streaks. No scores. No achievements.",
       "No promises about how you'll feel.",
       "No spiritual language.",
       "No pressure to meditate longer."
     ],
-    "startSession": "Start",
-    "llmActive": "AI guidance: active",
-    "llmInactive": "AI guidance: offline — add OPENAI_API_KEY to .env.local",
+    "startSession": "Begin",
+    "llmActive": "AI guidance: on",
+    "llmInactive": "AI guidance: off — add OPENAI_API_KEY to .env.local",
     "ttsActive": "Voice: available",
     "ttsInactive": "Voice: text only — add ELEVENLABS_API_KEY to .env.local"
   },
   "session": {
     "steps": {
-      "checkin": "How are you",
-      "review": "What I noticed",
+      "checkin": "How you feel",
+      "review": "For today",
       "practice": "Practice",
       "reflect": "After"
     },
-    "done": "Session saved. Take care of yourself.",
+    "done": "Saved. Take your time.",
     "anotherSession": "Another session",
-    "viewHistory": "View history"
+    "viewHistory": "Your history"
   },
   "checkin": {
     "moodLabel": "How are you feeling right now?",
@@ -62,7 +62,7 @@
     "pressuring": "Pressuring",
     "freeTextLabel": "Anything else on your mind?",
     "error": "Something went wrong. Please try again.",
-    "checking": "Checking...",
+    "checking": "One moment...",
     "continue": "Continue"
   },
   "reflection": {
@@ -72,20 +72,20 @@
     "preparing": "Preparing your session..."
   },
   "review": {
-    "mode": "Mode",
-    "duration": "Duration",
-    "noticed": "Noticed",
+    "mode": "Practice",
+    "duration": "Length",
+    "noticed": "Something I noticed",
     "begin": "Begin",
     "starting": "Starting...",
     "notToday": "Not today",
     "okayStop": "That's okay — stopping here",
     "modes": {
       "breath": "Breath awareness",
-      "sound": "Sound anchor",
+      "sound": "Listening",
       "body": "Body awareness",
-      "external": "External focus",
-      "reset": "Quick reset",
-      "abort": "Stop safely"
+      "external": "Looking outward",
+      "reset": "Short reset",
+      "abort": "Stopping safely"
     },
     "durations": {
       "30": "30 seconds",
@@ -103,11 +103,11 @@
     "audioError": "Couldn't load audio. Read the text above.",
     "worseBtn": "This is making it harder",
     "worseTitle": "What's happening?",
-    "worsePlaceholder": "Anything you want to say — or leave it blank.",
+    "worsePlaceholder": "Say anything — or leave it blank.",
     "adjustOrStop": "Adjust or stop",
     "adjusting": "Adjusting...",
     "cancel": "Cancel",
-    "done": "I'm done"
+    "done": "Done"
   },
   "post": {
     "pressureQuestion": "Did the practice ease the pressure, or add to it?",
@@ -116,7 +116,7 @@
     "continueQuestion": "Would you want to practice again today?",
     "yes": "Yes",
     "no": "No",
-    "notesLabel": "Anything to remember for next time?",
+    "notesLabel": "Anything worth remembering for next time?",
     "optional": "(optional)",
     "requiredError": "Please answer both questions.",
     "submitError": "Something went wrong. Please try again.",
@@ -124,13 +124,13 @@
     "done": "Done"
   },
   "history": {
-    "title": "Your sessions",
+    "title": "Your practice",
     "sessionsCount": "{count} sessions",
-    "noSessions": "No sessions yet.",
-    "whatWeNoticed": "What we've noticed",
-    "feltBetter": "Felt better",
+    "noSessions": "Nothing yet. Start whenever you're ready.",
+    "whatWeNoticed": "What I've learned",
+    "feltBetter": "Eased it",
     "addedPressure": "Added pressure",
-    "wouldPracticeAgain": "Would practice again",
+    "wouldPracticeAgain": "Would go again",
     "enoughForToday": "Enough for today"
   },
   "crisis": {
@@ -141,6 +141,6 @@
       "Samaritans (UK): 116 123",
       "Befrienders Worldwide: befrienders.org"
     ],
-    "notDesigned": "This app isn't designed for crisis situations. The people above are."
+    "notDesigned": "This app isn't the right place for this. The people above are."
   }
 }

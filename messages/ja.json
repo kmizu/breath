@@ -2,13 +2,13 @@
   "nav": {
     "brand": "ひといき",
     "session": "セッション",
-    "history": "履歴",
+    "history": "記録",
     "switchLocale": "English"
   },
   "home": {
     "title": "ひといき",
-    "subtitle": "あなたのマインドフルネスをそっとそばで見守るパートナー。練習が助けになっているか、それとも重荷になっていないかを一緒に確認します。",
-    "watchesFor": "こんなことを見ています",
+    "subtitle": "あなたの練習を覚えていく、静かなパートナー。何が助けになるかを学びながら、練習が重荷になっていないかを一緒に確かめます。",
+    "watchesFor": "気にかけていること",
     "watchItems": [
       "頑張りすぎていないか",
       "受け入れを義務にしていないか",
@@ -24,21 +24,21 @@
       "長く瞑想させようとしません。"
     ],
     "startSession": "はじめる",
-    "llmActive": "AIガイダンス: 有効",
-    "llmInactive": "AIガイダンス: オフライン — .env.local に OPENAI_API_KEY を追加",
+    "llmActive": "AIガイダンス: オン",
+    "llmInactive": "AIガイダンス: オフ — .env.local に OPENAI_API_KEY を追加",
     "ttsActive": "音声: 利用可能",
     "ttsInactive": "音声: テキストのみ — .env.local に ELEVENLABS_API_KEY を追加"
   },
   "session": {
     "steps": {
       "checkin": "気持ちを聞かせて",
-      "review": "気づいたこと",
+      "review": "今日のために",
       "practice": "練習",
       "reflect": "振り返り"
     },
-    "done": "セッションを保存しました。お疲れ様でした。",
+    "done": "保存しました。ゆっくりどうぞ。",
     "anotherSession": "もう一度",
-    "viewHistory": "履歴を見る"
+    "viewHistory": "記録を見る"
   },
   "checkin": {
     "moodLabel": "今、どんな気分ですか？",
@@ -59,10 +59,10 @@
     "skip": "スキップ",
     "relieving": "楽になった",
     "neutral": "普通",
-    "pressuring": "プレッシャーになった",
+    "pressuring": "重くなった",
     "freeTextLabel": "他に気になることはありますか？",
     "error": "エラーが発生しました。もう一度お試しください。",
-    "checking": "確認中...",
+    "checking": "少しだけお待ちください...",
     "continue": "続ける"
   },
   "reflection": {
@@ -72,7 +72,7 @@
     "preparing": "セッションを準備しています..."
   },
   "review": {
-    "mode": "モード",
+    "mode": "練習",
     "duration": "時間",
     "noticed": "気づいたこと",
     "begin": "始める",
@@ -81,11 +81,11 @@
     "okayStop": "わかった — ここで止めます",
     "modes": {
       "breath": "呼吸への気づき",
-      "sound": "音への集中",
-      "body": "身体感覚への集中",
-      "external": "外部への集中",
-      "reset": "クイックリセット",
-      "abort": "安全に停止"
+      "sound": "音に耳を向ける",
+      "body": "身体感覚への気づき",
+      "external": "外の世界に目を向ける",
+      "reset": "短いリセット",
+      "abort": "安全に止まる"
     },
     "durations": {
       "30": "30秒",
@@ -124,10 +124,10 @@
     "done": "完了"
   },
   "history": {
-    "title": "セッションの記録",
+    "title": "あなたの練習",
     "sessionsCount": "{count}回",
-    "noSessions": "セッションはまだありません。",
-    "whatWeNoticed": "気づいたこと",
+    "noSessions": "まだありません。準備ができたらいつでも。",
+    "whatWeNoticed": "一緒に学んだこと",
     "feltBetter": "楽になった",
     "addedPressure": "重くなった",
     "wouldPracticeAgain": "またやりたい",
@@ -141,6 +141,6 @@
       "こころの健康相談統一ダイヤル: 0570-064-556",
       "Befrienders Worldwide: befrienders.org"
     ],
-    "notDesigned": "このアプリは危機的な状況のためには設計されていません。上記の方々がいます。"
+    "notDesigned": "このアプリはこういう時のためには作られていません。上の方々が助けてくれます。"
   }
 }
