@@ -19,7 +19,7 @@ Open http://localhost:3000.
 
 | Variable | Required | Purpose |
 |---|---|---|
-| `ANTHROPIC_API_KEY` | No | LLM-based supervisor. Without this, rule-based detection only. |
+| `OPENAI_API_KEY` | No | LLM-based supervisor + guidance (gpt-5.4). Without this, rule-based detection only. |
 | `ELEVENLABS_API_KEY` | No | Voice playback. Without this, guidance is text-only. |
 | `ELEVENLABS_VOICE_ID` | No | Voice to use. Defaults to a calm English voice. |
 
