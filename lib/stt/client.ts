@@ -8,7 +8,7 @@ export async function speechToText(audioBuffer: Buffer, language?: string): Prom
 
   const formData = new FormData();
   const blob = new Blob([new Uint8Array(audioBuffer)], { type: 'audio/webm' });
-  formData.append('audio', blob, 'audio.webm');
+  formData.append('file', blob, 'audio.webm');
   formData.append('model_id', 'scribe_v1');
   if (language) formData.append('language_code', language);
 
